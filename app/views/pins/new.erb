@@ -1,0 +1,36 @@
+<h1>New Pin</h1>
+
+
+    <div class="col-md-6">      
+      <div class="form-group">
+          
+          
+<%= form_for @pin do |f| %>
+  <label for="pin_title">Title</label>
+  <%= f.text_field :title %>
+ 
+  <label for="pin_category_id">Category</label>
+  <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+
+       <a>
+          <%= f.label :file_field, "Image" %><%= f.file_field :image %>
+        </a>
+
+        <a>
+          <%= f.label :url, "URL" %>
+        </a>
+        <%= f.url_field :url, class: 'form-control', placeholder: 'URL' %>
+          
+        <a>
+          <%= f.label :slug, "Slug" %>
+        </a>
+        <%= f.text_field :slug, class: 'form-control', placeholder: 'Slug' %>   
+      </div> 
+</div>
+
+
+<%= f.submit %>
+
+<% end %>
+
+
