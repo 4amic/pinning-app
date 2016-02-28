@@ -6,6 +6,7 @@
 </div>
 
 <div class="show-pin">
+  <img src="<%= @pin.image.url(:medium) %>">
   <p><%= "#{@pin.text}" %></p>
 
   <hr/>
@@ -16,6 +17,6 @@
 </div>
 <br/>
 <a href="/">
-  <i class="fa fa-chevron-left"></i>
+<i class="fa fa-arrow-left"></i>
   Back to Home
 </a>

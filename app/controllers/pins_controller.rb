@@ -31,15 +31,15 @@ class PinsController < ApplicationController
      end
     
      def edit
-    @pin = Pin.find(params[:id])
-  end
+        @pin = Pin.find(params[:id])
+    end
     
     
     
     private
     
     def pin_params
-        params.require(:pin).permit(:title, :url, :slug, :text, :category_id)
+  params.require(:pin).permit(:title, :url, :slug, :text, :category_id, :image)
     end
     
      end
