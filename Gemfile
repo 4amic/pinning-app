@@ -29,9 +29,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Puma as the web server
 gem 'puma'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 gem 'rspec'
 gem 'rspec-rails'
 gem 'rails_12factor'
@@ -39,6 +36,9 @@ gem 'paperclip'
 gem 'rake', '~> 10.5.0'
 gem 'aws-sdk', '< 2.0'
     
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
